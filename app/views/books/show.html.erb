@@ -1,0 +1,23 @@
+<%= link_to 'index', books_path %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
+
+<p>
+  <strong>Memo:</strong>
+  <%= @book.memo %>
+</p>
+
+<h1>Chat room</h1>
+
+<div id="messages">
+  <%= render @messages %>
+</div>
+
+<form>
+  <label>Say something:</label><br>
+  <input type="text" data-behavior="room_speaker">
+</form>
