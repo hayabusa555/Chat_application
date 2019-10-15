@@ -13,15 +13,20 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title,size:40 %>
   </div>
 
   <div class="field">
+  <%= form.label :tag %>
+  <%= form.text_field :tag,size:40 %>
+</div>
+
+  <div class="field">
     <%= form.label :memo %>
-    <%= form.text_area :memo %>
+    <%= form.text_area :memo,cols:40,rows:20 %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "create" %>
   </div>
 <% end %>

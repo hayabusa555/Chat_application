@@ -36,3 +36,4 @@ gem 'devise'
 
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
+gem 'ransack'
